@@ -1,10 +1,13 @@
-# Module class template
+from base.module import BaseModule
 
-from base.module import BaseModule, command
-from pyrogram.types import Message
+# Extensions
+from .extensions.eval import EvalCmd
+from .extensions.term import TermCmd
 
-class ModuleTemplate(BaseModule):
-    # Register handler
-    @command("example")
-    async def example_cmd(self, _, message: Message):
-        await message.reply(self.S["some"]["strings"])
+class TerminalMod(BaseModule):
+    @property
+    def module_extensions(self):
+        return [
+            TermCmd,
+            EvalCmd
+        ]

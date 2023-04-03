@@ -1,2 +1,12 @@
-some:
-  strings: "Hello, World!"
+term:
+  command: "💻 <b>Command:</b>"
+  exec: "🤔 <b>Execution...</b>"
+  output: "✅ <b>Output:</b>"
+
+eval:
+  exec: "🐍 <b>Executing code...</b>"
+  code: "🐍 <b>Code:</b>"
+  result: "✅ <b>Result:</b>"
+
+no_args: "❌ <b>No arguments specified</b>"
+err: '❌ <b>Error:</b>'
