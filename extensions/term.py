@@ -14,6 +14,7 @@ class TermCmd(ModuleExtension):
     @allowed_for("owner")
     @command("term")
     async def term_cmd(self, _, message: Message):
+        """Module for executing a term command"""
         # Получаем аргументы команды
         args = message.text.split()
 
